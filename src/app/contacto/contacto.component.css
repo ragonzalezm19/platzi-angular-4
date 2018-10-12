@@ -1,0 +1,11 @@
+.well {
+    margin-bottom: 0;
+}
+
+agm-map {
+    height: 300px;
+}
+
+.border-right {
+    border-right: 1px solid #ccc;
+}

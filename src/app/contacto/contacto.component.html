@@ -1,0 +1,37 @@
+<div class="well">
+  <a routerLink="/lugares">Lugares</a> / 
+</div>
+
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <label>Nombre</label>
+      <input type="text" class="form-control">
+      <br>
+      <label>Correo</label>
+      <input type="email" class="form-control">
+      <br>
+      <label>Mensaje</label>
+      <textarea class="form-control"></textarea>
+      <hr>
+      <a class="btn btn-primary">Enviar</a>
+      <a class="btn btn-default" routerLink="/lugares">Cancelar</a>
+    </div>
+    <div class="col-md-4">
+      <div class="well">
+        <h3>Descripción: </h3> {{empresa.descripcion}}
+        <h3>Dirección: </h3> {{empresa.direccion}}
+        <h3>Correo: </h3> {{empresa.correo}}
+        <h3>Telefono: </h3> {{empresa.telefono}}
+      </div>
+    </div>
+  </div>
+  <br>
+  
+</div>
